@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>モンスターを追加する</title>
+</head>
+<body>
+    <h2>モンスターを追加する</h2>
+    <form action="/monster_add">
+        <label for="id">No.</label>
+        <input type="number" name="id" id="id" required><br>
+        <label for="name">モンスター名</label>
+        <input type="text" name="name" id="name" required><br>
+        <label for="species">種族</label>
+        <input type="text" name="species" id="species" required><br>
+        <label for="alias">別名</label>
+        <input type="text" name="alias" id="alias"><br>
+        <input type="submit" value="登録">
+    </form>
+    <a href="/monster">一覧に戻る</a>
+</body>
+</html>

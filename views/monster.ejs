@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>モンハンワイルズの新モンスター</title>
+</head>
+<body>
+  <h2>モンハンワイルズの新モンスター一覧</h2>
+  <table border="1">
+    <tr><th>No.</th><th>モンスター名</th><th>種族</th><th>別名</th></tr>
+    <% for( let row of data ) { %>
+      <tr>
+        <td><%= row.id %></td>
+        <td><%= row.name %></td>
+        <td><%= row.species %></td>
+        <td><%= row.alias %></td>
+      </tr>
+    <% } %>
+  </table>
+  <a href="/public/monster_add.html">モンスターを追加する</a>
+</body>
+</html>
